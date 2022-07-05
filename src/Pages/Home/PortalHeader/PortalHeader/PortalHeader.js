@@ -3,10 +3,12 @@ import { Row, Col, Container } from "react-bootstrap";
 import imge from "../../../../Images/portalHeader/portalHeader.png";
 import imge2 from "../../../../Images/portalHeader/points-icon-3.jpg";
 import DonutChartOne from "../DonutChartOne/DonutChartOne";
+import DonutChartTwo from "../DonutChartTwo/DonutChartTwo";
+import DonutChartThree from "../DonutChartThree/DonutChartThree";
 
 const PortalHeader = () => {
   return (
-    <Container style={{ fontFamily: "Arial", margin: "40px 20px 0px 20px" }}>
+    <Container style={{ fontFamily: "Arial", margin: "40px 20px 0px 20px", display: "grid", placeItems: "center"}}>
       <Row>
         <Col xs={6} md={6}>
           <div
@@ -61,17 +63,46 @@ const PortalHeader = () => {
         </Col>
 
         <Col xs={6} md={2}>
-         <div style={{textAlign: "center", AlignItems: "center"}}>
-         <DonutChartOne></DonutChartOne>
-         <h5>Completed</h5>
-         <p>58 Completed</p>
-         </div>
+          <div
+            style={{
+              textAlign: "center",
+              AlignItems: "center",
+              display: "grid",
+              placeItems: "center",
+            }}
+          >
+            <DonutChartOne></DonutChartOne>
+            <h5 style={{ marginLeft: -70 }}>Speaking</h5>
+            <p style={{ marginLeft: -70 }}>58 Completed</p>
+          </div>
         </Col>
         <Col xs={6} md={2}>
-          xs=6 md=4
+          <div
+            style={{
+              textAlign: "center",
+              AlignItems: "center",
+              display: "grid",
+              placeItems: "center",
+            }}
+          >
+            <DonutChartTwo></DonutChartTwo>
+            <h5 style={{ marginLeft: -70 }}>Grammar</h5>
+            <p style={{ marginLeft: -70 }}>126 Completed</p>
+          </div>
         </Col>
         <Col xs={6} md={2}>
-          xs=6 md=4
+          <div
+            style={{
+              textAlign: "center",
+              AlignItems: "center",
+              display: "grid",
+              placeItems: "center",
+            }}
+          >
+            <DonutChartThree></DonutChartThree>
+            <h5 style={{ marginLeft: -70 }}>Set of Words</h5>
+            <p style={{ marginLeft: -70 }}>72 Completed</p>
+          </div>
         </Col>
       </Row>
     </Container>

@@ -1,6 +1,6 @@
 import React from "react";
 import Chart from "react-apexcharts";
-const DonutChartOne = () => {
+const DonutChartThree = () => {
   return (
     <React.Fragment>
       <div>
@@ -8,9 +8,9 @@ const DonutChartOne = () => {
           type="donut"
           width={400}
           height={150}
-          series={[26]}
+          series={[35]}
           options={{
-            labels: ["26%"],
+            labels: ["35%"],
             plotOptions: {
               pie: {
                 donut: {
@@ -32,5 +32,4 @@ const DonutChartOne = () => {
   );
 };
 
-export default DonutChartOne;
-
+export default DonutChartThree;
