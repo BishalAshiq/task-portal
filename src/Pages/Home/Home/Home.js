@@ -1,6 +1,6 @@
 import React from 'react';
 import Navigation from '../../../Shared/Navigation/Navigation';
-import PortalHeader from '../PortalHeader/PortalHeader';
+import PortalHeader from '../PortalHeader/PortalHeader/PortalHeader';
 
 const Home = () => {
     return (
